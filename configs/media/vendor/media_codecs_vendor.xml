@@ -81,7 +81,7 @@ Only the three quirks included above are recognized at this point:
 -->
 
 <!--
- SM6150 Non-Secure decoder capabilities
+ SM8150 Non-Secure decoder capabilities
  _________________________________________________________
  | Codec       | W       H       fps     Mbps    MB/s    |
  |_____________|_________________________________________|
@@ -94,7 +94,7 @@ Only the three quirks included above are recognized at this point:
  | mpeg2       | 1920    1088    30      40       244800 |
  |_____________|_________________________________________|
 
- SM6150 Secure decoder capabilities
+ SM8150 Secure decoder capabilities
  ______________________________________________________
  | Codec    | W       H       fps     Mbps    MB/s    |
  |__________|_________________________________________|
@@ -104,7 +104,7 @@ Only the three quirks included above are recognized at this point:
  | mpeg2    | 1920    1088    30      35       244800 |
  |__________|_________________________________________|
 
- SM6150 Non-Secure encoder capabilities (Secure not supported)
+ SM8150 Non-Secure encoder capabilities (Secure not supported)
  ______________________________________________________
  | Codec    | W       H       fps     Mbps    MB/s    |
  |__________|_________________________________________|
