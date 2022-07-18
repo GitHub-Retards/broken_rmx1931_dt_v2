@@ -54,7 +54,7 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := proton
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-$(TARGET_KERNEL_CLANG_VERSION)
 TARGET_KERNEL_SOURCE := kernel/realme/sm8150
-TARGET_KERNEL_CONFIG := vendor/RMX1931_defconfig
+TARGET_KERNEL_CONFIG := RMX1931_defconfig
 BOARD_BOOTIMG_HEADER_VERSION := 1
 
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
@@ -125,15 +125,15 @@ BOARD_HAS_QCA_FM_SOC := "cherokee"
 BOARD_HAVE_QCOM_FM := true
 
 # HIDL
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
-DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/framework_manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
 ODM_MANIFEST_SKUS += \
 	365 \
 	366
 
-ODM_MANIFEST_365_FILES := $(DEVICE_PATH)/configs/hidl/manifest_sdmmagpie.xml
-ODM_MANIFEST_366_FILES := $(DEVICE_PATH)/configs/hidl/manifest_sdmmagpie.xml
+ODM_MANIFEST_365_FILES := $(DEVICE_PATH)/manifest_sdmmagpie.xml
+ODM_MANIFEST_366_FILES := $(DEVICE_PATH)/manifest_sdmmagpie.xml
 
 # LMKD
 TARGET_LMKD_STATS_LOG := true
@@ -224,3 +224,5 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
 -include vendor/realme/RMX1931/BoardConfigVendor.mk
+
+

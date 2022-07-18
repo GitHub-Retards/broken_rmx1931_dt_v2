@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-$(call inherit-product, device/realme/RMX1931/device.mk)
+$(call inherit-product, device/realme/RMX1931/RMX1931.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
