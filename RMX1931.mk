@@ -123,7 +123,6 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.a2dp@1.0-impl \
     android.hardware.bluetooth.audio@2.0-impl \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor \
@@ -171,9 +170,9 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     vendor.display.config@2.0 \
-    gralloc.sm8150 \
-    hwcomposer.sm8150 \
-    memtrack.sm8150 \
+    gralloc.msmnile \
+    hwcomposer.msmnile \
+    memtrack.msmnile \
     libdisplayconfig \
     libdisplayconfig.vendor \
     libdisplayconfig.qti \
@@ -191,20 +190,14 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@4.0.vendor
 
 # Doze
-PRODUCT_PACKAGES += \
-    devicesettings \
-    RealmeProximityHelper \
-    RealmeDoze
+# PRODUCT_PACKAGES += \
+#     devicesettings \
+#     RealmeDoze
 
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
     android.hardware.drm@1.4-service.clearkey
-    
-# Parts
-PRODUCT_PACKAGES += \
-    RealmeProximityHelper \
-    RealmeParts
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -295,7 +288,7 @@ PRODUCT_PACKAGES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.RMX1931 \
-    lights.sm8150
+    lights.msmnile
 
 # Media
 PRODUCT_PACKAGES += \
