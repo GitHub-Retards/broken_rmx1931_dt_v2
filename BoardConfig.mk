@@ -127,6 +127,8 @@ BOARD_HAVE_QCOM_FM := true
 # HIDL
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
+
 
 # LMKD
 TARGET_LMKD_STATS_LOG := true
