@@ -469,7 +469,7 @@ vendor/bin/hvdcp_opti
 vendor/etc/charger_fstab.qti
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 vendor/firmware/fastchg/oplus_vooc_fw.bin
-odm/firmware/fastchg/19771/oplus_vooc_fw.bin
+odm/firmware/fastchg/19081/oplus_vooc_fw.bin
 
 # CNE
 -vendor/app/CneApp/CneApp.apk
@@ -1302,16 +1302,16 @@ vendor/etc/ltm_config_samsung_amb655uv01_amoled_fhd+_panel_with_DSC.xml
 vendor/etc/ltm_config_samsung_AMS678UW01_dsc_cmd_mode_panel.xml
 odm/etc/samsung1024_ams641rw16_eyeprotect_data.xml
 odm/etc/samsung1024_ams641rw16_srgb_eyeprotect_data.xml
-odm/firmware/tp/19771/FW_S3706_SAMSUNG.img
-odm/firmware/tp/19771/FW_S3706_SAMSUNG_FAE.img
-odm/firmware/tp/19771/LIMIT_S3706_SAMSUNG.img
+odm/firmware/tp/19081/FW_S3706_SAMSUNG.img
+odm/firmware/tp/19081/FW_S3706_SAMSUNG_FAE.img
+odm/firmware/tp/19081/LIMIT_S3706_SAMSUNG.img
 
 # Display-calibration
 vendor/etc/qdcm_calib_data_oppo19031samsung_AMS655LSI60_1080_2400_cmd_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_oppo19031samsung_AMS655LSI61_1080_2400_61fps_cmd_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_oppo19031samsung_AMS655MGN61_1080_2400_61fps_cmd_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_oppo19111samsung_ams641rw16_1080_2340_cmd_mode_dsi_panel.xml
-vendor/etc/qdcm_calib_data_rm19771samsung_ams641rw16_1080_2340_cmd_mode_dsi_panel.xml
+vendor/etc/qdcm_calib_data_rm19081samsung_ams641rw16_1080_2340_cmd_mode_dsi_panel.xml
 
 # SCVE
 vendor/lib/libscveCommon.so
