@@ -44,6 +44,7 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=1 androidboot.usbcontroller=a600000.dwc3 earlycon=msm_geni_serial,0x880000 loop.max_part=7
 BOARD_KERNEL_CMDLINE += androidboot.fstab_suffix=qcom
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
@@ -143,22 +144,25 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 5309988864
 BOARD_SYSTEMIMAGE_PARTITION_TYPE := ext4
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 118152441856
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
-BOARD_VENDORIMAGE_PARTITION_SIZE := 1769996288
+BOARD_VENDORIMAGE_PARTITION_SIZE := 1631584256
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
-# old board_vendorimage_partition_size = 1631584256,  It compiled with 2999996416 but didn't flash
-
+BOARD_ODMIMAGE_PARTITION_SIZE := 813649920 # Old size 268435456, 913625088 compiles but doesn't work
+BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_USES_METADATA_PARTITION := true
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
 
+
+TARGET_COPY_OUT_ODM := odm
+TARGET_COPY_OUT_VENDOR := vendor
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
 TARGET_USES_MKE2FS := true
 
-BOARD_USES_METADATA_PARTITION := true
-
-TARGET_COPY_OUT_VENDOR := vendor
+# original board_vendorimage_partition_size = 1631584256,  It compiled with 2999996416 but didn't flash. It works with 1769996288 no issue.
 
 # Symlinks
+
 BOARD_ROOT_EXTRA_SYMLINKS += \
 	/vendor/odm:/odm
 
